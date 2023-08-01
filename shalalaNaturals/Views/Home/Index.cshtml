@@ -1,0 +1,263 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>SHALALA NATURALS</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="../images/shalcon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="../../style.css">
+    <!-- ALL VERSION CSS -->
+    <link rel="stylesheet" href="../../css/versions.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="../../css/responsive.css">
+    <!-- Custom CSS -->
+    <link href="~/css/custom.css" rel="stylesheet" />
+    <!-- Modernizer for Portfolio -->
+    <script src="js/modernizer.js"></script>
+    <script src="js/modernizer.js"></script>
+    <style>
+        .stuff {
+            background-color: rgb(68, 60, 60);
+        }
+    </style>
+
+</head>
+<body class="host_version"
+
+      <div class="stuff">
+<!-- LOADER -->
+	<div id="preloader">
+		<div class="loader-container">
+			<div class="progress-br float shadow">
+				<div class="progress__item"></div>
+			</div>
+		</div>
+	</div>
+<!-- END LOADER -->
+<!-- Start header -->
+	<header class="top-navbar">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="../../Pages/HOME.aspx" id="topPic">
+					<img src="../../images/white1.jpg" alt="" />
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbars-host">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item"><a class="nav-link" href="../../Pages/HOME.aspx">HOME</a></li>
+						<li class="nav-item"><a class="nav-link" href="../../Pages/BUY.aspx">BUY</a></li>
+						<li class="nav-item"><a class="nav-link" href="../../Pages/ABOUT.aspx">ABOUT</a></li>
+                        <li class="nav-item"><asp:HyperLink CssClass="nav-link" runat="server" ID="HyperLink1" NavigateUrl="Pages/Management/Management.aspx">Management</asp:HyperLink></li>
+						<li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">MY ACCOUNT</a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdown-a">
+                                        <asp:DynamicHyperLink CssClass="dropdown-item" runat="server" ID="lnkLogin" NavigateUrl="Pages/Account/Login.aspx">LOGIN</asp:DynamicHyperLink>
+                                        <asp:DynamicHyperLink CssClass="dropdown-item" runat="server" ID="lnkRegister" NavigateUrl="Pages/Account/Registration.aspx">REGISTER</asp:DynamicHyperLink>
+                                        <asp:DynamicHyperLink runat="server" CssClass="dropdown-item" ID="litStatus" NavigateUrl="Pages/ShoppingCart.aspx"></asp:DynamicHyperLink>
+                                        <asp:LinkButton ID="lnkLogout" CssClass="dropdown-item" runat="server" OnClick="lnkLogout_Click">Logout</asp:LinkButton>
+                                    </div>
+                                </li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+<!-- End header -->
+      </div>
+
+
+
+    <div id="carouselExampleControls" class="carousel slide bs-slider box-slider" data-ride="carousel" data-pause="hover" data-interval="false">
+<!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleControls" data-slide-to="1"></li>
+            <li data-target="#carouselExampleControls" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <div id="home" class="first-section" style="background-image:url('../images/combs1.jpeg');">
+                    <div class="dtab">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 text-right">
+                                    <div class="big-tagline">
+                                        <h2><strong>Shalala naturals</strong>100% natural oils</h2>
+                                        <p class="lead"></p>
+                                        <a href="BUY.aspx" class="hover-btn-new"><span>Products</span></a>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <a href="ABOUT.aspx" class="hover-btn-new"><span>Read More</span></a>
+                                    </div>
+                                </div>
+                            </div><!-- end row -->
+                        </div><!-- end container -->
+                    </div>
+                </div><!-- end section -->
+            </div>
+            <div class="carousel-item">
+                <div id="home" class="first-section" style="background-image:url('../images/combs2.jpeg');">
+                    <div class="dtab">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 text-left">
+                                    <div class="big-tagline">
+                                        <h2 data-animation="animated zoomInRight">Refreshing organic scent <strong></strong></h2>
+                                        <p class="lead" data-animation="animated fadeInLeft"></p>
+                                        <a href="BUY.aspx" class="hover-btn-new"><span>Products</span></a>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <a href="ABOUT.aspx" class="hover-btn-new"><span>Read More</span></a>
+                                    </div>
+                                </div>
+                            </div><!-- end row -->
+                        </div><!-- end container -->
+                    </div>
+                </div><!-- end section -->
+            </div>
+            <div class="carousel-item">
+                <div id="home" class="first-section" style="background-image:url('../images/combs3.jpeg');">
+                    <div class="dtab">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 text-center">
+                                    <div class="big-tagline">
+                                        <h2 data-animation="animated zoomInRight"><strong>All types of hair</strong>Skin care</h2>
+                                        <p class="lead" data-animation="animated fadeInLeft"></p>
+                                        <a href="BUY.aspx" class="hover-btn-new"><span>PRODUCTS</span></a>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <a href="ABOUT.aspx" class="hover-btn-new"><span>Read More</span></a>
+                                    </div>
+                                </div>
+                            </div><!-- end row -->
+                        </div><!-- end container -->
+                    </div>
+                </div><!-- end section -->
+            </div>
+<!-- Left Control -->
+            <a class="new-effect carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="fa fa-angle-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+
+<!-- Right Control -->
+            <a class="new-effect carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="fa fa-angle-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+
+
+           <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>About US</h3>
+                        </div>
+                        <p>Shalala naturals Are 100% natural oils</p>
+<p></p>
+                         <p>With the finest essential oils for a refreshing organic scent & nutrients,including Shea butter they help to grow your hair & works for all types of hair :afro,relaxed,dreadlocks, braids & also on beards.</p>
+                    <p></p>
+                          <p>Fall inlove with your hair not someone else's</p>
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+				<div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Information Link</h3>
+                        </div>
+                        <ul class="footer-links">
+                            <li><a href="index">HOME</a></li>
+                            <li><a href="../../BUY.aspx">BUY</a></li>
+                            <li><a href="../../ABOUT.aspx">ABOUT</a></li>
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Contact Details</h3>
+                        </div>
+
+                        <ul class="footer-links">
+                            <li><a href="mailto:#">Ndivhuwoshalala98@icloud.com</a></li>
+                            <li><a href="#">www.shalalanaturals.com</a></li>
+                            <li>0815759041 / (073) 317-2317</li>
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </footer><!-- end footer -->
+    <div class="copyrights">
+        <div class="container">
+            <div class="footer-distributed">
+                <div class="footer-left">
+                </div>
+
+                <div class="footer-right">
+                    <ul class="footer-links-soi">
+						<li><a href="https://www.facebook.com/Shalala-Naturals-107809410995321/"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="https://www.instagram.com/shalala_naturals/?hl=en"><i class="fa fa-instagram"></i></a></li>
+					</ul><!-- end links -->
+                </div>
+            </div>
+        </div><!-- end container -->
+    </div><!-- end copyrights -->
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+<!-- ALL JS FILES -->
+    <script src="../../js/all.js"></script>
+<!-- ALL PLUGINS -->
+    <script src="../../js/custom.js"></script>
+	<script src="../../js/timeline.min.js"></script>
+	<script>
+		timeline(document.querySelectorAll('.timeline'), {
+			forceVerticalMode: 700,
+			mode: 'horizontal',
+			verticalStartPosition: 'left',
+			visibleItems: 4
+		});
+	</script>
+        <style>
+        .footer {
+    padding: 90px 0 80px !important;
+    color: #999;
+	 background:#1f1f1f url('../../images/mypic6.jpg') no-repeat center;
+}
+
+
+    @@media only screen and (min-width: 280px) and (max-width: 599px) {
+    #topPic {
+        display: none;
+    }
+}
+
+@@media (min-width: 768px) {
+    .footer {
+        background: #1f1f1f url('../../images/mypic7.jpg') no-repeat center;
+}
+    </style>
+</body>
+</html>
